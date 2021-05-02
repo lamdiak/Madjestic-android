@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".view.OnboardingScreen1">
 
 
@@ -28,8 +27,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="220dp"
-        android:text="Bienvenue"
-        android:textSize="27sp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/welcome"
+        android:textColor="@color/black"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -39,13 +40,13 @@
         android:id="@+id/onboardingscreen1_subline1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="xxxxxxxxxxx"
-        android:textStyle="bold"
-        android:textSize="14sp"
         android:layout_marginBottom="180dp"
+        android:text="xxxxxxxxxxx"
+        android:textSize="14sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/onboardingscreen1_headline"
 
         />
@@ -55,23 +56,50 @@
         android:id="@+id/onboardingscreen1_subline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="xxxxxxxx"
-        android:textStyle="bold"
-        android:textSize="14sp"
         android:layout_marginBottom="140dp"
+        android:text="xxxxxxxx"
+        android:textSize="14sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/onboardingscreen1_subline1"
 
         />
 
-    <Button
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/btn_onboarding_screen"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_margin="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent">
 
+        <ImageButton
+            android:id="@+id/img_btn_next"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_onboarding_screen"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingBottom="5dp"
+            android:src="@drawable/ic_baseline_arrow_forward_24" />
+    </LinearLayout>
+
+
+   <!-- <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+        android:id="@+id/dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dotsColor="@color/colorTint"
+        app:dotsCornerRadius="8dp"
+        app:dotsSize="16dp"
+        app:dotsSpacing="4dp"
+        app:dotsWidthFactor="2.5"
+        app:selectedDotColor="@android:color/transparent"
+        app:progressMode="true"
+        android:layout_margin="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        /> -->
 </androidx.constraintlayout.widget.ConstraintLayout>

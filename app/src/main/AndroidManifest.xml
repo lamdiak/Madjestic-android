@@ -8,6 +8,7 @@
         tools:ignore="ScopedStorage" />
 
     <application
+        android:name=".baseController.ApplicationController"
         android:allowBackup="true"
         android:fullBackupContent="true"
         android:icon="@mipmap/ic_launcher"
@@ -23,6 +24,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/roboto_medium" />
     </application>
 
 </manifest>
