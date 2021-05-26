@@ -1,11 +1,12 @@
-package com.devrich.madjestic
+package com.devrich.madjestic.view.dashboard
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
+import com.devrich.madjestic.R
 import com.devrich.madjestic.baseController.ApplicationController
-import com.devrich.madjestic.view.OnboardingScreen1
+import com.devrich.madjestic.view.onboarding.OnboardingScreen1
 import timber.log.Timber
 
 

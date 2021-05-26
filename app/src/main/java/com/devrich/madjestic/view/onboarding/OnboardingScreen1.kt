@@ -1,4 +1,4 @@
-package com.devrich.madjestic.view
+package com.devrich.madjestic.view.onboarding
 
 import android.os.Build
 import android.os.Bundle
